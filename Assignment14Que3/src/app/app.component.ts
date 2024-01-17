@@ -1,0 +1,19 @@
+import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { RouterOutlet } from '@angular/router';
+
+import { BooksComponent } from './books/books.component';
+import { TechnologyComponent } from './technology/technology.component';
+import { WrongchoiceComponent } from './wrongchoice/wrongchoice.component';
+import { RouterLink } from '@angular/router';
+
+@Component({
+  selector: 'app-root',
+  standalone: true,
+  imports: [CommonModule, RouterOutlet, BooksComponent, TechnologyComponent, WrongchoiceComponent, RouterLink],
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css']
+})
+export class AppComponent {
+  title = 'Assignment14Que3';
+}
